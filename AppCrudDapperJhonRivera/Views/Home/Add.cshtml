@@ -1,0 +1,38 @@
+﻿
+@model IEnumerable<ClienteModel>
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form action="Add" method="post">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nro Documento</label>
+    <input type="text" class="form-control" id="exampleInputEmail1"  name="NroDocumento" aria-describedby="Documento">
+    
+  </div>
+ <div class="mb-3">
+    <label for="Nombre" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="Nombre" aria-describedby="Nombre">
+  
+  </div>
+ <div class="mb-3">
+    <label for="Direccion" class="form-label">Direccion</label>
+    <input type="text" class="form-control" id="Direccion" name="Direccion" aria-describedby="Direccion">
+
+  </div>
+  <div class="mb-3">
+    <label for="Telefono" class="form-label">Telefono</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="Telefono" aria-describedby="Telefono">
+   
+  </div>
+  <div class="mb-3">
+    <label for="Observacion" class="form-label">Observacion</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="Observacion" aria-describedby="Observacion">
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Registrar</button>
+  <a class="btn btn-danger btn-sm m-3" type="submit" href="@Url.Action("index", "Home")">Cancelar</a>
+</form>
+
